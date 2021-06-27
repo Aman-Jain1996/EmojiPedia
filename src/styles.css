@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+
+:root {
+  --primary-color: #67e8f9;
+  --width: 600px;
+  font-family: "Kalam", cursive;
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--primary-color);
+  min-height: 60px;
+  margin-bottom: 1.4rem;
+  width: 100%;
+}
+
+#emojiContainer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+header div {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  padding: 1.3rem;
+  box-sizing: border-box;
+}
+
+.emojiInput {
+  height: auto;
+  width: 60%;
+  border-radius: 1rem;
+  padding: 12px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.emojiInput:focus-visible {
+  outline: none;
+}
+
+.resetButton {
+  border: 1px solid black;
+  width: fit-content;
+  background-color: var(--primary-color);
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: auto;
+  padding: 8px 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.resetButton:hover {
+  transition: all ease-in-out 0.3s;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  display: block;
+  background-color: var(--primary-color);
+  padding: 10px 0px;
+}
+
+footer div {
+  max-width: var(--width);
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+.resultDiv {
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+.emojiList {
+  margin-top: 2rem;
+  border: 1px solid #e5e7eb;
+  padding: 0rem 2rem;
+  margin: auto;
+  max-width: var(--width);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.emojiList:hover {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.emojiList div {
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.emojiList div span {
+  padding: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 3rem;
+}
