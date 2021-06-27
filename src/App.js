@@ -73,7 +73,10 @@ export default function App() {
         </div>
       </div>
       <footer>
-        <div>Are you also confused about the Emoji's</div>
+        <div>
+          Are you also confused about the Emoji's your friend send's you <br />
+          Check their meanings here
+        </div>
       </footer>
     </div>
   );
