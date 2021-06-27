@@ -1,2 +1,3 @@
 # EmojiPedia
-Created with CodeSandbox
+
+Check the result @ [EmojiPedia](https://emoji-pediaa.netlify.com)
