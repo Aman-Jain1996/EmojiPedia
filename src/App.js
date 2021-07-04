@@ -45,7 +45,12 @@ export default function App() {
   return (
     <div className="App">
       <header>
-        <div>EmojiPedia😀</div>
+        <div>
+          EmojiPedia
+          <span role="img" aria-label=" ">
+            😀
+          </span>
+        </div>
       </header>
       <div id="emojiContainer">
         <input
@@ -59,6 +64,7 @@ export default function App() {
       <div onClick={resetHandler} className="resetButton">
         Reset
       </div>
+
       <div className="resultDiv" style={{ color: styleError }}>
         <h2>{input}</h2>
       </div>
