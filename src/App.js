@@ -7,10 +7,18 @@ const dict = {
   "🤟": "Love-You Gesture",
   "😞": "Disappointed Face",
   "😲": "Astonished Face",
-  "😠": " Angry Face"
+  "😠": " Angry Face",
+  "😫": "Tired Face",
+  "🤗": "Hugging Face",
+  "🤫": "Shushing Face",
+  "😴": "Sleeping Face",
+  "😵": "Dizzy Face"
 };
 
 var emojisKnown = Object.keys(dict);
+var emojiMeaning = Object.values(dict);
+
+emojiMeaning = emojiMeaning.map((item) => item.toUpperCase());
 
 export default function App() {
   const [input, InputHandler] = useState();
@@ -18,9 +26,11 @@ export default function App() {
 
   function onChangeHandler(e) {
     var userInput = e.target.value;
-    if (e.target.value in dict) {
+
+    if (emojiMeaning.includes(userInput.toUpperCase())) {
+      let index = emojiMeaning.indexOf(userInput.toUpperCase());
       styleErrorHandler();
-      InputHandler(dict[userInput]);
+      InputHandler(emojisKnown[index]);
     } else {
       if (userInput === "") {
         InputHandler();
