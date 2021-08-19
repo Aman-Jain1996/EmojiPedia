@@ -7,7 +7,7 @@ const dict = {
   "🤟": "Love-You Gesture",
   "😞": "Disappointed Face",
   "😲": "Astonished Face",
-  "😠": " Angry Face",
+  "😠": "Angry Face",
   "😫": "Tired Face",
   "🤗": "Hugging Face",
   "🤫": "Shushing Face",
