@@ -70,10 +70,12 @@ header div {
 
 footer {
   position: absolute;
+  bottom: 1px;
   left: 0;
   width: 100%;
   text-align: center;
   display: block;
+  margin-top: 1rem;
   background-color: var(--primary-color);
   padding: 10px 0px;
 }
@@ -91,7 +93,7 @@ footer div {
 
 .emojiList {
   border: 1px solid #e5e7eb;
-  margin: 2rem auto;
+  margin: 2rem auto 0;
   width: 90%;
   max-width: var(--width);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
