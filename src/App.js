@@ -31,12 +31,10 @@ export default function App() {
       let index = emojiMeaning.indexOf(userInput.toUpperCase());
       styleErrorHandler();
       InputHandler(emojisKnown[index]);
-    } 
-    else if (emojisKnown.includes(userInput)) {
+    } else if (emojisKnown.includes(userInput)) {
       styleErrorHandler();
       InputHandler(dict[userInput]);
-    } 
-    else {
+    } else {
       if (userInput === "") {
         InputHandler();
       } else {
